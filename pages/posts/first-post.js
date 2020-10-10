@@ -1,8 +1,13 @@
 import React from "react";
+import Link from "next/Link";
+
 
 export default function X(){
     return(
-        <div>First Post</div>
+        <div>First Post
+
+            <Link  href="/"><a>回到首页</a></Link>
+        </div>
     )
 }
 //渲染页面：
