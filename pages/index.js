@@ -15,6 +15,12 @@ export default function Home() {
                     </Link>
 
                 </h1>
+                <h1>测试单文件style</h1>
+                <style jsx>
+                    {
+                        'h1{color:red}'
+                    }
+                </style>
 
                 <p className={styles.description}>
                     Get started by editing{' '}

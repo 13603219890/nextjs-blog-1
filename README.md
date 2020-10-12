@@ -29,4 +29,14 @@ export default function App({ Component, pageProps }) {
 }
 
 粘贴到_app.js
+
+6.全局css
+styles/global.css
+7.单文件css
+<style jsx>
+{
+    'h1{color:red}'
+}
+</style>
+
 ```
