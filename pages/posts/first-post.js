@@ -1,19 +1,15 @@
 import React, {useCallback} from "react";
-import Link from "next/Link";
-import Head from "next/head";
+import styles from 'styles/first-post.module.css'
 
-console.log("执行了啊啊啊啊啊啊")
 
-export default function X() {
-    const clickMe = useCallback(() => {
-        console.log("12312")
-    }, [])
+
+export default function FirstPost() {
     return (
-        <div>First Post
-
-            <Link href="/"><a>回到首页</a></Link>
-            <button onClick={clickMe}>点击</button>
+        <>
+        <div>
+            <div className={styles.wrapper}>测试css module</div>
         </div>
+        </>
     )
 }
 //渲染页面：

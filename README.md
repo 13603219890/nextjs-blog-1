@@ -38,5 +38,31 @@ styles/global.css
     'h1{color:red}'
 }
 </style>
+jsx就会只在当前内部区域生效
+想要全局生效可以加个global
+或者 使用 cssModules：
+新建first-post.module.css (写错的话，会报错：
+./styles/first-post_module.css
+Global CSS cannot be imported from files other than your Custom <App>. Please move all global CSS imports to pages\_app.js. Or convert the import to Component-Level CSS (CSS Modules).
+Read more: https://err.sh/next.js/css-global
+Location: pages\posts\first-post.js
+）
+.wrapper{
+background:red;
+border:1px solid blue
+}
+.content{
+padding:10px;
+}
 
+8.setting plugins 安装styled-jsx
+9.import '../styles/globals.css'把..去掉：
+创建jsconfig.json 
+nextjs.org文档里Adwanced Features=>Absolute Imports and Module Path Aliases
+粘贴
+{
+  "compilerOptions": {
+    "baseUrl": "."
+  }
+}
 ```
